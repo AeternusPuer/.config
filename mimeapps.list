@@ -1,0 +1,8 @@
+[Added Associations]
+application/x-shellscript=code.desktop;
+inode/directory=code.desktop;kitty-open.desktop;
+image/jpeg=swappy.desktop;
+text/plain=code.desktop;
+
+[Default Applications]
+text/plain=code.desktop

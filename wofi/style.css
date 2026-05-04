@@ -1,0 +1,45 @@
+window {
+  background-color: rgba(32, 32, 32, 0.9);
+}
+
+* {
+  font-family: "Jetbrains Mono";
+  color: #fff;
+}
+
+#scroll {
+  padding: 0.5rem;
+  border: 0;
+  border-top: solid 2px rgb(65, 67, 69);
+}
+
+#input {
+  background-color: rgba(32, 32, 32, 0.9);
+  color: #ffffff;
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+#inner-box {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+#img {
+  margin: 3px 3px;
+}
+
+#entry {
+  border-radius: 0.5rem;
+}
+
+#entry:selected {
+  background-color: rgba(49, 62, 73, 0.574);
+  outline: none;
+  border: solid 1px rgb(40, 165, 165);
+}

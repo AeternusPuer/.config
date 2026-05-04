@@ -1,0 +1,236 @@
+* {
+    min-height: 0px;
+    border: none;
+    background: none;
+    font-family: "JetBrains Mono, Font Awesome";
+    font-weight: bold;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+window>box {
+    background-color: rgba(40, 40, 40, 0.250);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#window {
+    border-radius: 3px;
+    color: #cdd6f4
+}
+
+window#waybar.empty #window {
+    border: none;
+}
+
+tray#waybar.empty #tray {
+    border: none;
+}
+
+.modules-left {
+    padding: 4px;
+
+}
+
+.modules-right {
+    padding: 4px;
+}
+
+.modules-center {
+    padding: 4px;
+}
+
+#workspaces {
+    border-radius: 4px;
+}
+
+#button {
+    background-image: none;
+    background: none;
+}
+
+#custom-launcher:hover {
+    color: rgb(9, 232, 199);
+    background-color: rgba(190, 227, 227, 0.150);
+    border-radius: 4px;
+}
+
+#custom-launcher {
+    border-radius: 4px;
+    padding: 0px 8px 0px 10px;
+    color: #dcf5f3;
+}
+
+#workspaces button {
+    min-height: 0;
+    margin-right: 2px;
+    color: #0ccdea;
+}
+
+#workspaces button.urgent {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        border: solid 2px #0ccdea;
+    }
+}
+
+#workspaces button.empty {
+    color: #cdd6f4;
+}
+
+#workspaces button.visible {
+    color: #0cd209;
+}
+
+#workspaces button:hover {
+    color: rgb(9, 232, 143);
+    background-color: rgba(190, 227, 227, 0.150);
+    border-radius: 4px;
+}
+
+#cpu {
+    border-radius: 4px 4px 4px 4px;
+    padding: 0px 8px 0px 8px;
+    margin: 0px 2px;
+    color: #0496f7;
+}
+
+/* GPU Temp */
+#custom-gpu-temp {
+    padding: 0px 8px 0px 8px;
+    color: #04f504;
+}
+
+#custom-gpu-temp.warning {
+    color: #f9e2af;
+    background: rgba(249, 226, 175, 0.25);
+}
+
+#custom-gpu-temp.critical {
+    color: #f38ba8;
+    background: rgba(243, 139, 168, 0.25);
+}
+
+/* CPU Temp */
+#temperature {
+    border-radius: 4px;
+    padding: 0px 8px 0px 8px;
+    color: #078bf7;
+}
+
+#temperature.critical {
+    color: #f38ba8;
+    background: rgba(243, 139, 168, 0.25);
+}
+
+#memory {
+    border-radius: 4px;
+    padding: 0px 4px 0px 4px;
+    color: #fdcf00;
+}
+
+#pulseaudio {
+    border-radius: 4px;
+    padding: 0px 8px 0px 8px;
+    color: #f9e2af;
+}
+
+#pulseaudio.muted {
+    color: #f38ba8;
+    padding: 0px 8px 0px 8px;
+}
+
+#clock {
+    border-radius: 4px 4px 4px 4px;
+    padding: 0px 8px 0px 8px;
+    color: #94e2d5;
+}
+
+#network {
+    color: #cdd6f4;
+    border-radius: 4px;
+    padding: 0px 8px 0px 8px;
+}
+
+#network.disabled {
+    color: #f38ba8;
+    padding: 0px 8px 0px 8px;
+}
+
+#tray {
+    border-radius: 4px;
+    padding: 0px 8px 0px 8px;
+}
+
+#battery {
+    color: #cdd6f4;
+    border-radius: 4px;
+    padding: 0px 8px 0px 8px;
+}
+
+#backlight {
+    color: #cdd6f4;
+    border-radius: 4px;
+    padding: 0px 8px 0px 8px;
+}
+
+#language {
+    color: #cdd6f4;
+    padding: 0px 8px 0px 8px;
+    border-radius: 4px;
+}
+
+#custom-gpu-temp:hover,
+#temperature:hover,
+#cpu:hover,
+#tray:hover,
+#clock:hover,
+#network:hover,
+#pulseaudio:hover,
+#language:hover {
+    padding: 0px 8px 0px 8px;
+    background-color: rgba(255, 255, 255, 0.074);
+    border-radius: 4px;
+}
+
+#custom-power {
+    border-radius: 4px;
+    color: #dcf5f3;
+    padding: 0px 8px 0px 4px;
+}
+
+#custom-power:hover {
+    color: rgb(9, 232, 199);
+    background-color: rgba(190, 227, 227, 0.150);
+    border-radius: 4px;
+}
+
+/* ToolTip всплывающие окна */
+tooltip {
+    background: rgba(17, 17, 27, 0.85);
+    border: 2px solid rgb(23, 89, 105);
+    border-radius: 4px;
+    padding: 10px;
+    color: #cdd6f4;
+}
+
+tooltip label {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    color: #cdd6f4;
+}
