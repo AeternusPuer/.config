@@ -1,6 +1,6 @@
 [Added Associations]
 application/x-shellscript=code.desktop;
-inode/directory=code.desktop;kitty-open.desktop;
+inode/directory=code.desktop;obsidian.desktop;kitty-open.desktop;
 image/jpeg=swappy.desktop;
 text/plain=code.desktop;
 video/mp4=vlc.desktop;
