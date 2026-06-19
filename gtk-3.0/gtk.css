@@ -22,10 +22,12 @@
 
 
 /* Цвет декорации (например, обводки или индикатора) при наведении (голубой). */
-@define-color theme_button_decoration_hover_breeze  #403f3f; 
-/* Цвет декорации при фокусе голубой */
-@define-color theme_button_decoration_focus_breeze   #403f3f;
+@define-color theme_button_decoration_hover_breeze #403f3f;
+@define-color theme_button_decoration_focus_breeze #403f3f;
+@define-color theme_hovering_selected_bg_color_breeze #403f3f;
 @define-color theme_view_active_decoration_color_breeze #dd0606;
+
+
 
 
 menu {
@@ -149,4 +151,7 @@ dialog selection {
     color: rgb(222, 215, 215);
     border-radius: 4px;
 }
+
+
+
 
