@@ -1,0 +1,66 @@
+/* Цвет основного фона */
+@define-color bColor rgba(23, 23, 24, 0.85);
+/* Цвет основного шрифта  */
+@define-color fColor #50c878;
+/* Цвет выделения кнопок */
+@define-color bColor_hover rgba(32, 42, 42, 0.3);
+/* Цвет бордера */
+@define-color borderColor #e70505;
+/* Цвет шрифта выделеных кнопок */
+@define-color fColor_selected #06e1f1;
+
+* {
+  font-family: "Jetbrains Mono";
+  font-style: italic;
+  font-size: 16px;
+  box-shadow: none;
+  border-radius: 0px;
+  color: red;
+}
+
+window {
+  background-color: @bColor;
+}
+
+#input {
+  padding: 4px 10px 4px 10px;
+  background-color: transparent;
+  color: @fColor_selected;
+  outline: none;
+  border-bottom: 1px solid @borderColor;
+  font-size: 18px;
+  font-weight: bold;
+f}
+
+#input:focus {
+    border-radius: 0px;
+    outline: none;
+    border-bottom: 1px solid @borderColor;
+}
+#inner-box,
+#inner-box image {
+  margin: 0.5rem;
+}
+
+#entry {
+  border-radius: 4px;
+  outline: none;
+  border-radius: 20px/10px;
+  border: solid 1px transparent;
+}
+#entry label{
+  color: @fColor;
+}
+
+#entry:selected {
+  background-color: @bColor_hover;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px/10px;
+  border-right: 1px solid @borderColor;
+  border-left: 1px solid @borderColor;
+}
+
+#entry:selected label {
+  color: @fColor_selected;
+}

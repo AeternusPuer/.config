@@ -1,0 +1,144 @@
+@define-color theme_selected_bg_color #403f3f;
+@define-color theme_unfocused_selected_bg_color #403f3f;
+@define-color theme_bg_color #171718;
+/* Фон текстовых полей и аналогичных элементов ввода */
+@define-color theme_base_color #171718;
+/* Фон неактивных (нечувствительных) виджетов */
+@define-color insensitive_bg_color #171718;
+/* Фон неактивных текстовых полей */
+@define-color insensitive_base_color #171718;
+/* Фон виджетов в неактивных (фоновых) окнах */
+@define-color theme_unfocused_bg_color #171718;
+/* Фон текстовых виджетов в неактивных окнах */
+@define-color theme_unfocused_base_color #171718;
+/* Цвет фона окна (заголовок) — теперь совпадает с основным фоном */
+@define-color wm_bg #171718;
+/* Цвет фона неактивного окна */
+@define-color wm_unfocused_bg #171718;
+/* Фон области просмотра контента (например, внутри вкладок) */
+@define-color content_view_bg #171718;
+/* Фон текстовых представлений (например, редактора) */
+@define-color text_view_bg #171718;
+
+
+menu {
+    background-color: #171718;
+}
+
+menu menuitem {
+    background-color: #171718;
+    color: #ffffff !important;
+}
+
+menu menuitem:hover,
+.thunar paned scrolledwindow treeview.view:selected,
+.thunar .reorderable-page:hover {
+    background-color: rgba(64, 63, 63, 0.4);
+}
+
+.thunar .view {
+    background-color: rgb(22, 22, 23);
+}
+
+.thunar toolbar {
+    background-color: rgb(22, 22, 23);
+    border-bottom: 1px solid #4c566a;
+    padding: 4px 8px;
+}
+
+.thunar menubar {
+    background-color: #171718;
+}
+
+.thunar menubar menuitem {
+    color: #f5f8f8;
+}
+
+.thunar toolbar entry {
+    background-color: #171718;
+    border: 1px solid rgb(64, 63, 63);
+    border-radius: 4px;
+}
+
+dialog {
+    background-color: #171718;
+}
+
+notebook {
+    background-color: #171718;
+}
+
+notebook entry,
+notebook header {
+    background-color: #171718;
+    border: 1px solid rgb(64, 63, 63);
+}
+
+.thunar .reorderable-page {
+    background-color: #171718;
+    border: 1px solid rgb(64, 63, 63);
+    border-radius: 4px;
+}
+
+.thunar .reorderable-page:checked {
+    border: 1px solid rgb(178, 22, 22);
+    box-shadow: none;
+    outline: none;
+}
+
+.thunar .top {
+    border-radius: 4px;
+}
+
+window frame,
+window frame entry {
+    background-color: #171718;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.thunar toolbar entry:focus,
+notebook entry:focus,
+window frame entry:focus {
+    border: 1px solid rgb(178, 22, 22);
+    box-shadow: none;
+    outline: none;
+}
+
+notebook stack combobox button {
+    border: 1px solid rgb(64, 63, 63);
+    background-color: #171718;
+}
+
+notebook stack combobox button:focus {
+
+    border: 1px solid rgb(178, 22, 22);
+    box-shadow: none;
+    outline: none;
+}
+
+treeview.view rubberband,
+.thunar .rubberband {
+    border: 1px solid rgb(178, 22, 22);
+    background-color: rgba(22, 22, 23, 0.2);
+    border-radius: 0;
+    outline: none;
+}
+
+.thunar .standard-view .view:hover {
+    border-radius: 4px;
+}
+
+
+.thunar selection,
+dialog selection {
+    background-color: rgba(137, 137, 145, 0.3);
+    color: #f5f8f8;
+    border-radius: 0px;
+}
+
+.thunar .standard-view .view *:selected {
+    background-color: rgba(88, 134, 142, 0.7);
+    color: rgb(222, 215, 215);
+    border-radius: 4px;
+}

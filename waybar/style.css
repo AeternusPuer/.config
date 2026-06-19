@@ -1,0 +1,367 @@
+/* Цвет основного фона */
+@define-color bColor rgba(23, 23, 24, 0.85);
+/* Цвет основного шрифта рабочих столов */
+@define-color fColor_ws #e70505;
+/* Цвет шрифта window */
+@define-color fColor_win #85e89d;
+/* Цвет шрифта активных рабочих столов */
+@define-color fColor_active #85e89d;
+/* Цвет выделения кнопок */
+@define-color bColor_hover rgba(32, 42, 42, 0.4);
+/* Цвет шрифта выделеных кнопок */
+@define-color fColor_hover #85e89d;
+/* Цвет шрифта мониторинга  */
+@define-color fColor_monitoring #85e89d;
+/* Цвет часов */
+@define-color fColor_clock #85e89d;
+/* Цвет шрифта всплывающих окон(tooltip) */
+@define-color fColor_tooltip #85e89d;
+/* Цвет бордера */
+@define-color borderColor #e70505;
+
+* {
+    min-height: 0px;
+    border: none;
+    background: transparent;
+    font-family: "JetBrains Mono, Font Awesome, sans-serif;";
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+window#waybar>* {
+    background: @bColor;
+    border-radius: 4px;
+    border: 1px solid @borderColor;
+    padding: 0px 4px 0px 4px;
+}
+/* 
+.modules-left {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+} */
+
+#custom-launcher {
+    font-size: 22px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 3px 0px 7px;
+    color: #e70505;
+    font-family: "Font Awesome";
+    border-radius: 20px/10px;
+    border-right: 1px solid @borderColor;
+    border-left: 1px solid @borderColor;
+
+}
+
+#custom-launcher:hover,
+#custom-tray_icon:hover,
+#custom-power:hover {
+    color: @fColor_hover;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces {
+    padding: 0px 2px 0px 2px;
+    margin: 0px 0px 0px 0px;
+}
+
+#button {
+    background-image: none;
+    background: none;
+}
+
+#workspaces button {
+    color: @fColor_active;
+    background-color: transparent;
+    font-weight: 900;
+}
+
+#workspaces button.urgent {
+
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        border: solid 2px #0ccdea;
+    }
+}
+
+#workspaces button.empty {
+    color: @fColor_ws;
+    background-color: transparent;
+}
+
+#workspaces button.visible {
+    color: @fColor_active;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+#workspaces button:hover,
+#custom-new-workspace:hover,
+#taskbar button:hover {
+    color: @fColor_hover;
+    background-color: @bColor_hover;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+#custom-new-workspace {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 12px 0px 8px;
+    font-weight: bold;
+    color: #e70505;
+    font-size: 18px;
+    font-family: "Font Awesome";
+}
+
+#new-workspace,
+#hardware,
+#new-window {
+    border-radius: 20px/10px;
+    border-right: 1px solid @borderColor;
+    border-left: 1px solid @borderColor;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 5px 0px 5px;
+}
+
+#new-workspace:hover,
+#hardware:hover,
+#new-window:hover,
+#tray_group:hover {
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* CPU Load */
+#cpu {
+    border-radius: 4px 4px 4px 4px;
+    padding: 0px 8px 0px 8px;
+    margin: 0px 2px;
+    color: @fColor_monitoring;
+    font-family: "Font Awesome";
+}
+
+/* CPU Temp */
+#temperature {
+    border-radius: 4px;
+    padding: 0px 8px 0px 8px;
+    color: @fColor_monitoring;
+    font-family: "Font Awesome";
+}
+
+#temperature.critical {
+    color: #ff6200;
+    background: rgba(243, 139, 168, 0.25);
+    font-family: "Font Awesome";
+}
+
+/* GPU Temp */
+#custom-gpu-temp {
+    padding: 0px 8px 0px 8px;
+    color: @fColor_monitoring;
+    font-family: "Font Awesome";
+}
+
+#custom-gpu-temp.warning {
+    color: #f9e2af;
+    background: rgba(249, 226, 175, 0.25);
+    font-family: "Font Awesome";
+}
+
+#custom-gpu-temp.critical {
+    color: #ff6200;
+    background: rgba(243, 139, 168, 0.25);
+    font-family: "Font Awesome";
+}
+
+/* RAM Load */
+#memory {
+    border-radius: 4px;
+    padding: 0px 4px 0px 4px;
+    color: @fColor_monitoring;
+    font-family: "Font Awesome";
+}
+
+#custom-gpu-temp:hover,
+#cpu:hover,
+#language:hover,
+#pulseaudio:hover,
+#network:hover,
+#clock:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: @bColor_hover;
+    border-radius: 4px;
+}
+
+/* Центральный модуль */
+/* .modules-center {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 4px 0px 4px;
+} */
+
+#window {
+    padding: 0px 10px 0px 10px;
+    font-style: italic;
+    color: @fColor_win;
+}
+
+window#waybar.empty #new-window {
+    border: none;
+}
+
+/* Правый модуль */
+/* .modules-right {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+} */
+
+#tray {
+    border-radius: 0px;
+    margin-right: 5px;
+    padding: 2px 4px 2px 4px;
+}
+
+/* Доделать меню */
+#tray menu {
+    color: @fColor_tooltip;
+    background-color: @bColor;
+    border: 1px solid @borderColor;
+    opacity: 0.85;
+    padding: 0px 2px 0px 2px;
+}
+
+#tray menuitem {
+    margin: 2px 0px 2px 0px;
+    border: 1px solid transparent;
+    /* добавляем эту строку */
+}
+
+#tray menuitem:hover {
+    border-radius: 4px;
+    background-color: @bColor_hover;
+    border-bottom: 1px solid @borderColor;
+    transition: all 0.3s ease-in-out;
+}
+
+#tray_group {
+    font-size: 22px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 7px 0px 7px;
+    color: #e70505;
+    border-radius: 20px/10px;
+    border-right: 1px solid @borderColor;
+    border-left: 1px solid @borderColor;
+}
+
+#custom-tray_icon {
+    font-size: 22px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 1px 0px 1px;
+    color: #e70505;
+    font-family: "Font Awesome";
+}
+
+tray#waybar.empty #group-tray_group {
+    border: none;
+}
+
+#language,
+#pulseaudio,
+#network {
+    font-family: "Font Awesome";
+    color: @fColor_active;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 8px 0px 8px;
+    border-radius: 20px/10px;
+    border-right: 1px solid @borderColor;
+    border-left: 1px solid @borderColor;
+}
+
+#network.disabled,
+#network.disconnected,
+#pulseaudio.muted {
+    font-family: "Font Awesome";
+    font-weight: bold;
+    color: red;
+    padding: 0px 8px 0px 8px;
+}
+
+#clock {
+    font-family: "Font Awesome";
+    margin: 0px 0px 0px 0px;
+    padding: 0px 8px 0px 8px;
+    border-radius: 20px/10px;
+    border-right: 1px solid @borderColor;
+    border-left: 1px solid @borderColor;
+    color: @fColor_clock;
+}
+
+#custom-power {
+    font-size: 22px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 3px 0px 3px;
+    color: #e70505;
+    font-family: "Font Awesome";
+    border-radius: 20px/10px;
+    border-right: 1px solid @borderColor;
+    border-left: 1px solid @borderColor;
+
+}
+
+/* ToolTip всплывающие окна */
+tooltip {
+    background: @bColor;
+    opacity: 0.85;
+    border: 1px solid @borderColor;
+    border-radius: 4px;
+    padding: 10px;
+    color: #42aaff;
+}
+
+tooltip label {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    color: @fColor_tooltip;
+}
+
+menu {
+    background-color: @bColor;
+    color: #cdd6f4;
+    border-radius: 4px;
+    border: 1px solid @borderColor;
+    padding: 4px 2px;
+}
+
+menu menuitem {
+    padding: 6px 10px;
+    margin: 2px 4px;
+    border-radius: 4px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+menu menuitem:hover {
+    background-color: @bColor_hover;
+    color: @fColor_hover;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px/10px;
+    border-right: 1px solid @borderColor;
+    border-left: 1px solid @borderColor;
+}
+
+menu separator {
+    background-color: @borderColor;
+    margin: 4px 0;
+    min-height: 1px;
+}

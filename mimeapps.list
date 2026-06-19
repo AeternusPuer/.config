@@ -1,0 +1,6 @@
+[Added Associations]
+inode/directory=code.desktop;
+text/x-systemd-unit=code.desktop;
+
+[Default Applications]
+text/x-systemd-unit=code.desktop
