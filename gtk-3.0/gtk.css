@@ -1,34 +1,19 @@
 @define-color theme_selected_bg_color #403f3f;
 @define-color theme_unfocused_selected_bg_color #403f3f;
 @define-color theme_bg_color #171718;
-/* Фон текстовых полей и аналогичных элементов ввода */
 @define-color theme_base_color #171718;
-/* Фон неактивных (нечувствительных) виджетов */
 @define-color insensitive_bg_color #171718;
-/* Фон неактивных текстовых полей */
 @define-color insensitive_base_color #171718;
-/* Фон виджетов в неактивных (фоновых) окнах */
 @define-color theme_unfocused_bg_color #171718;
-/* Фон текстовых виджетов в неактивных окнах */
 @define-color theme_unfocused_base_color #171718;
-/* Цвет фона окна (заголовок) — теперь совпадает с основным фоном */
 @define-color wm_bg #171718;
-/* Цвет фона неактивного окна */
 @define-color wm_unfocused_bg #171718;
-/* Фон области просмотра контента (например, внутри вкладок) */
 @define-color content_view_bg #171718;
-/* Фон текстовых представлений (например, редактора) */
 @define-color text_view_bg #171718;
-
-
-/* Цвет декорации (например, обводки или индикатора) при наведении (голубой). */
 @define-color theme_button_decoration_hover_breeze #403f3f;
 @define-color theme_button_decoration_focus_breeze #403f3f;
 @define-color theme_hovering_selected_bg_color_breeze #403f3f;
 @define-color theme_view_active_decoration_color_breeze #dd0606;
-
-
-
 
 menu {
     background-color: #171718;
