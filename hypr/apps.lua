@@ -14,8 +14,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css")
     hl.exec_cmd("/usr/lib/hyprpolkitagent/hyprpolkitagent")
     hl.exec_cmd("/usr/lib/xdg-desktop-portal")
-    -- hl.exec_cmd("hyperhdr")
-    --   hl.exec_cmd("waybar & hyprpaper & firefox") -- Execute waybar, hyprpaper, firefox
+    --hl.exec_cmd("waybar & hyprpaper & firefox") -- Execute waybar, hyprpaper, firefox
 end)
 
 -- ### Window Rules ###
@@ -107,14 +106,23 @@ hl.window_rule({
     stay_focused = false,
     opacity      = 0.9,
 })
-
--- LXPolkit
 hl.window_rule({
-    name         = "lxpolkit",
+    name         = "DesktopEditors",
     match        = {
-        class = "lxpolkit",
+        class = "DesktopEditors",
     },
     animation    = "popin",
-    stay_focused = true,
-    opacity      = 0.85,
+    stay_focused = false,
+    opacity      = 0.9,
 })
+hl.window_rule({
+    name         = "xdg-desktop-portal-gtk",
+    match        = {
+        class = "xdg-desktop-portal-gtk",
+    },
+    animation    = "popin",
+    stay_focused = false,
+    opacity      = 0.9,
+})
+
+

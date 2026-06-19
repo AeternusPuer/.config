@@ -13,7 +13,7 @@
   <property name="misc-open-new-window-as-tab" type="bool" value="true"/>
   <property name="misc-confirm-close-multiple-tabs" type="bool" value="false"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,157,50,50,198,50,50,768,50,50,89,50,496"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,150,50,91,137,50,50,639,50,50,84,50,58"/>
   <property name="misc-recursive-permissions" type="string" value="THUNAR_RECURSIVE_PERMISSIONS_ALWAYS"/>
   <property name="last-image-preview-visible" type="bool" value="true"/>
   <property name="shortcuts-icon-emblems" type="bool" value="true"/>

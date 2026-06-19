@@ -1,6 +1,7 @@
 [Added Associations]
 inode/directory=code.desktop;
 text/x-systemd-unit=code.desktop;
+text/css=code.desktop;
 
 [Default Applications]
 text/x-systemd-unit=code.desktop
