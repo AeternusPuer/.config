@@ -21,7 +21,7 @@ menu {
 
 menu menuitem {
     background-color: #171718;
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 menu menuitem:hover,

@@ -124,6 +124,15 @@ hl.window_rule({
     stay_focused = false,
     opacity      = 0.9,
 })
+hl.window_rule({
+    name         = "sddm-greeter",
+    match        = {
+        class = "sddm-greeter",
+    },
+    animation    = "popin",
+    stay_focused = false,
+    monitor      = "DP-2",
+})
 
 
 
