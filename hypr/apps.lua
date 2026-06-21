@@ -127,11 +127,11 @@ hl.window_rule({
 hl.window_rule({
     name         = "sddm-greeter",
     match        = {
-        class = "sddm-greeter",
+        class = "wlroots",
     },
     animation    = "popin",
     stay_focused = false,
-    monitor      = "DP-2",
+    monitor      = "HDMI-A-1",
 })
 
 
