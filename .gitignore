@@ -8,3 +8,7 @@ mozilla
 .vscode
 HyperHDR
 onlyoffice
+clangd
+QtProject.conf
+Qt
+QtProject
