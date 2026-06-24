@@ -52,7 +52,7 @@ hl.window_rule({
     float        = true,
     center       = true,
     animation    = "popin",
-    stay_focused = true,
+    stay_focused = false,
 })
 
 -- Pavucontrol
