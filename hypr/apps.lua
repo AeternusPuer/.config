@@ -1,6 +1,7 @@
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
+-- exec-once = "waybar"
 terminal    = "kitty"
 fileManager = "thunar"
 menu        = "~/.config/wofi/wofi-toggle.sh"
@@ -11,7 +12,7 @@ pavucontrol = "org.pulseaudio.pavucontrol"
 -------------------
 hl.on("hyprland.start", function()
     hl.exec_cmd("~/.azotebg-hyprland")
-    hl.exec_cmd("waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css")
+    hl.exec_cmd("waybar")
     hl.exec_cmd("/usr/lib/hyprpolkitagent/hyprpolkitagent")
     hl.exec_cmd("/usr/lib/xdg-desktop-portal")
     --hl.exec_cmd("waybar & hyprpaper & firefox") -- Execute waybar, hyprpaper, firefox

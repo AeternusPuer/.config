@@ -17,7 +17,7 @@ hl.permission("/usr/(bin|local/bin)/grim", "screencopy", "allow")
 hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencopy", "allow")
 
 -------------------
----- HARDWARE -----w
+---- HARDWARE -----
 -------------------
 hl.config({
     cursor = {
@@ -25,13 +25,7 @@ hl.config({
     },
 })
 
-
---hl.config({
---    xwayland = {
-   --     force_zero_scaling = true
-    --}
---})--
------------------------
+--------------
 ---- LOOK AND FEEL ----
 -----------------------
 

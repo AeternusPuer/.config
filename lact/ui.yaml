@@ -1,4 +1,4 @@
-selected_tab: software_page
+selected_tab: thermals_page
 selected_gpu: 10DE:220A-1462:389B-0000:01:00.0
 plots_time_period: 60
 plots_per_row: 2
@@ -19,5 +19,5 @@ gpus:
     - - FanPwm
 theme: automatic
 window_size:
-  width: 2548
-  height: 1387
+  width: 1258
+  height: 1355

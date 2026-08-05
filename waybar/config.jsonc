@@ -20,23 +20,23 @@
             "tooltip": false,
             "on-click": "~/.config/wofi/wofi-toggle.sh"
         },
-        "hyprland/workspaces": {
+    "hyprland/workspaces": {
             "format": "{icon}",
             "format-icons": {
                 "active": "●"
             },
-            "on-click": "activate",
+            "on-click": "hyprctl dispatch 'hl.dsp.workspace({id})'",
             "cursor": true,
             "show-special": false,
             "all-outputs": true,
-             "persistent-workspaces": {
+            "persistent-workspaces": {
                 "1": [],
                 "2": []
             }
         },
         "custom/new-workspace": {
             "format": "",
-            // "on-click": "hyprctl dispatch workspace empty",
+            "on-click": "hyprctl dispatch workspace empty",
             "tooltip": false
         },
         "group/new-workspace": {
@@ -124,7 +124,6 @@
                 "wlr/taskbar"
             ]
         },
-        
         "modules-right": [
             "group/tray_group",
             "hyprland/language",
@@ -216,11 +215,11 @@
         "custom/power": {
             "format": " 󰐥 ",
             "tooltip": false,
-            "menu": "on-click", 
-            "menu-file": "~/.config/waybar/scripts/power_menu.xml", 
-            "menu-actions": { 
-                "lock": "hyprlock", 
-                "hypr_exit": "hyprshutdown", 
+            "menu": "on-click",
+            "menu-file": "~/.config/waybar/scripts/power_menu.xml",
+            "menu-actions": {
+                "lock": "hyprlock",
+                "hypr_exit": "hyprshutdown",
                 "shutdown": "shutdown now",
                 "reboot": "reboot"
             }
