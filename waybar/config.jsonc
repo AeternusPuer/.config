@@ -136,7 +136,7 @@
             "spacing": 10
         },
         "custom/tray_icon": {
-            "format": "  ",
+            "format": "   ",
             "tooltip": false
         },
         "group/tray_group": {
