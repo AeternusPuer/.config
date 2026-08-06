@@ -155,7 +155,7 @@
             "format": "{}",
             "format-en": "🇺🇸 EN",
             "format-ru": "🇷🇺 RU",
-            "on-click": "hyprctl switchxkblayout razer-razer-blackwidow-v3-mini-keyboard next"
+            "on-click": "hyprctl switchxkblayout current next"
         },
         "pulseaudio": {
             "format": "{icon} {volume}%",
