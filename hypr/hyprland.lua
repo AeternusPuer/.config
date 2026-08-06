@@ -158,10 +158,10 @@ for i = 1, 10 do
     hl.bind(mainMod .. " + " .. key,         hl.dsp.focus({ workspace = i }))
     hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
+-- Переключение между мониторами по нажатию кнопки мыши
 hl.bind("mouse:276", function()
     hl.dispatch(hl.dsp.focus({ monitor = "+1" }))
 end)
-
 -- Специальное рабочее пространство
 hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
