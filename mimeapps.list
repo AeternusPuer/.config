@@ -1,5 +1,5 @@
 [Added Associations]
-inode/directory=code.desktop;
+inode/directory=com.microsoft.VSCode.desktop;code.desktop;
 text/x-systemd-unit=code.desktop;
 text/css=code.desktop;
 application/x-shellscript=code.desktop;
