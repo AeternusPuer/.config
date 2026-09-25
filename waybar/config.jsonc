@@ -21,11 +21,11 @@
             "on-click": "~/.config/wofi/wofi-toggle.sh"
         },
     "hyprland/workspaces": {
-            "format": "{icon}",
+            "format": "{name}",
             "format-icons": {
                 "active": "●"
             },
-            "on-click": "hyprctl dispatch 'hl.dsp.workspace({id})'",
+            "on-click": "activate",
             "cursor": true,
             "show-special": false,
             "all-outputs": true,
@@ -36,7 +36,7 @@
         },
         "custom/new-workspace": {
             "format": "",
-            "on-click": "hyprctl dispatch workspace empty",
+            "on-click": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"+1\" })'",
             "tooltip": false
         },
         "group/new-workspace": {

@@ -18,6 +18,7 @@ gpus:
     - - GpuVoltage
     - - FanPwm
 theme: automatic
+color_scheme: Auto
 window_size:
-  width: 1258
-  height: 1355
+  width: 2548
+  height: 1387
