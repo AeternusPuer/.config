@@ -32,7 +32,8 @@
             "persistent-workspaces": {
                 "1": [],
                 "2": []
-            }
+            },
+            "tooltip": false
         },
         "custom/new-workspace": {
             "format": "",
