@@ -159,6 +159,9 @@ for i = 1, 10 do
     hl.bind(mainMod .. " + " .. key,         hl.dsp.focus({ workspace = i }))
     hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
+-- Скриншоты
+hl.bind("SUPER + Print", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
+hl.bind("SUPER + SHIFT + Print", hl.dsp.exec_cmd('grim -g "$(slurp)" ~/Pictures/Area_$(date +%Y%m%d_%H%M%S).png'))
 -- Переключение между мониторами по нажатию кнопки мыши
 hl.bind("mouse:276", function()    hl.dispatch(hl.dsp.focus({ monitor = "+1" }))end)
 -- Специальное рабочее пространство
