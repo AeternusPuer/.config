@@ -20,8 +20,8 @@
             "tooltip": false,
             "on-click": "~/.config/wofi/wofi-toggle.sh"
         },
-    "hyprland/workspaces": {
-            "format": "{name}",
+        "hyprland/workspaces": {
+            "format": "{icon}",
             "format-icons": {
                 "active": "●"
             },
@@ -33,7 +33,7 @@
                 "1": [],
                 "2": []
             },
-            "tooltip": false
+            "tooltip": false,
         },
         "custom/new-workspace": {
             "format": "",

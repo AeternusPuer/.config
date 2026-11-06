@@ -10,14 +10,14 @@ pavucontrol = "org.pulseaudio.pavucontrol"
 -------------------
 ---- AUTOSTART ----
 -------------------
-hl.on("hyprland.start", function()
-    hl.exec_cmd("~/.azotebg-hyprland")
-    hl.exec_cmd("waybar")
-    hl.exec_cmd("/usr/lib/hyprpolkitagent/hyprpolkitagent")
-    hl.exec_cmd("/usr/lib/xdg-desktop-portal")
-    --hl.exec_cmd("waybar & hyprpaper & firefox") -- Execute waybar, hyprpaper, firefox
-end)
 
+hl.on("window.open", function(win)
+    -- Проверяем, что открылось именно окно kitty на рабочем столе 4
+    if win.class == "kitty" and win.workspace and win.workspace.id == 4 then
+        -- Перемещаем курсор в левый верхний угол (corner = 0) этого окна
+        hl.dispatch(hl.dsp.cursor.move_to_corner({ corner = 0, window = win }))
+    end
+end)
 -- ### Window Rules ###
 hl.window_rule({
     name      = "kitty",
@@ -27,6 +27,7 @@ hl.window_rule({
     monitor   = "DP-2, HDMI-A-1",
     workspace = 4,
     animation = "popin",
+    stay_focused = false,
 })
 -- Wofi на определённом мониторе
 hl.window_rule({
@@ -38,24 +39,26 @@ hl.window_rule({
     workspace    = "current",
     animation    = "popin",
     stay_focused = true,
+    
 })
 
 -- Wi-Fi Manager в терминале
 hl.window_rule({
     name         = "nwtui",
     match        = {
-        class = terminal,
-        title = "Wi-Fi Manager",
+        initial_title = "Wi-Fi Manager",
+        initial_class = "kitty", -- Указываем реальный класс терминала
+      
     },
-    size         = "1280 720",
+    size               = "1280 720",     
     monitor      = "current",
     workspace    = "current",
     float        = true,
     center       = true,
     animation    = "popin",
-    stay_focused = false,
+    stay_focused = true,
+    suppress_event      = "fullscreen maximize", -- заменяет nofullscreenrequest
 })
-
 -- Pavucontrol
 hl.window_rule({
     name         = "pavucontrol",
@@ -97,7 +100,8 @@ hl.window_rule({
     center       = true,
 })
 
--- Razergenie
+-- Razergenie    monitor      = "current",
+    workspace    = "current",
 hl.window_rule({
     name         = "razergenie",
     match        = {
