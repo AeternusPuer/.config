@@ -1,6 +1,6 @@
 {show=drun
 width=30%
-height=600
+lines=15
 prompt=Поиск...
 normal_window=true
 location=center
@@ -14,4 +14,5 @@ orientation=vertical
 halign=fill
 content_halign=fill
 hide_scroll = true
+close_on_focus_loss=true
 }
