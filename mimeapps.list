@@ -6,6 +6,7 @@ application/x-shellscript=code.desktop;
 application/x-zerosize=code.desktop;com.microsoft.VSCode.desktop;
 image/jpeg=org.kde.gwenview.desktop;org.xfce.ristretto.desktop;swayimg.desktop;org.gnome.Shotwell-Viewer.desktop;
 image/png=org.kde.gwenview.desktop;
+text/plain=com.microsoft.VSCode.desktop;
 
 [Default Applications]
 text/x-systemd-unit=code.desktop

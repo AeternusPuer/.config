@@ -1,14 +1,10 @@
 [
     {
-        // "max-height": 36,
         "layer": "top",
         "position": "top",
         "margin": "5 5 0 5",
         "locale": "ru_RU.UTF-8",
-        "output": [
-            "DP-2",
-            "HDMI-A-1"
-        ],
+        "output": "*",
         "spacing": 5,
         "modules-left": [
             "custom/launcher",
@@ -33,7 +29,7 @@
                 "1": [],
                 "2": []
             },
-            "tooltip": false,
+            "tooltip": false
         },
         "custom/new-workspace": {
             "format": "",
@@ -226,4 +222,5 @@
             }
         }
     }
+   
 ]

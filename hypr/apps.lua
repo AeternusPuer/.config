@@ -10,14 +10,44 @@ pavucontrol = "org.pulseaudio.pavucontrol"
 -------------------
 ---- AUTOSTART ----
 -------------------
-hl.on("window.open", function(win)
-    if win.workspace  then
-        hl.dispatch(hl.dsp.cursor.move_to_corner({ corner = 0, window = win }))
-    end
+hl.on("hyprland.start", function()
+    hl.exec_cmd("~/.azotebg-hyprland")
+    hl.exec_cmd("waybar -c ~/.config/waybar/config/DP-2.jsonc -s ~/.config/waybar/styles/DP-2.css")
+    hl.exec_cmd("waybar -c ~/.config/waybar/config/HDMI-A-1.jsonc -s ~/.config/waybar/styles/HDMI-A-1.css")
+    hl.exec_cmd("/usr/lib/hyprpolkitagent/hyprpolkitagent")
+    hl.exec_cmd("/usr/lib/xdg-desktop-portal")
 end)
 
+-- Приложения для исключения
+local exceptions = {
+    classes = { steam = true, kitty = false },
+    title_patterns = { "^Save", "Dialog" },
+    content_types = { game = true },
+}
 
--- ### Window Rules ###
+local function is_excluded(win)
+    if exceptions.classes[win.class] then
+        return true
+    end
+    for _, pattern in ipairs(exceptions.title_patterns) do
+        if win.initial_title and win.initial_title:match(pattern) then
+            return true
+        end
+    end
+    if win.content_type and exceptions.content_types[win.content_type] then
+        return true
+    end
+    return false
+end
+-- Общие правила
+hl.on("window.open", function(win)
+    if not win.workspace or is_excluded(win) then
+        return
+    end
+    hl.dispatch(hl.dsp.cursor.move_to_corner({ corner = 0, window = win }))
+end)
+
+-- Kitty
 hl.window_rule({
     name      = "kitty",
     match     = {
@@ -59,9 +89,9 @@ hl.window_rule({
     center       = true,
     animation    = "popin",
     stay_focused = false,
+    maximize = false,
     opacity      = 0.95,
 })
-
 -- Thunar
 hl.window_rule({
     name         = "Thunar",
@@ -72,7 +102,6 @@ hl.window_rule({
     stay_focused = false,
     opacity      = 0.9,
 })
-
 -- Thunar переименование
 hl.window_rule({
     name         = "Thunar_rename",
@@ -85,12 +114,11 @@ hl.window_rule({
     size         = "600 140",
     float        = true,
     center       = true,
-})
-
--- Razergenie    monitor      = "current",
-    workspace    = "current",
+    
+})    
 hl.window_rule({
     name         = "razergenie",
+    workspace    = "current",
     match        = {
         class = "xyz.z3ntu.razergenie",
     },
