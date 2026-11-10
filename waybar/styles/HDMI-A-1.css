@@ -37,31 +37,6 @@ window#waybar>* {
     border: 1px solid @borderColor;
     padding: 0px 4px 0px 4px;
 }
-/* 
-.modules-left {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-} */
-
-#custom-launcher {
-    font-size: 22px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 7px 0px 7px;
-    color: #e70505;
-    font-family: "Font Awesome";
-    border-radius: 20px/10px;
-    border-right: 1px solid @borderColor;
-    border-left: 1px solid @borderColor;
-
-}
-
-#custom-launcher:hover,
-#custom-tray_icon:hover,
-#custom-power:hover {
-    color: @fColor_hover;
-    border-radius: 4px;
-    transition: all 0.3s ease-in-out;
-}
 
 #workspaces {
     padding: 0px 2px 0px 2px;
@@ -135,8 +110,7 @@ window#waybar>* {
 
 #new-workspace:hover,
 #hardware:hover,
-#new-window:hover,
-#tray_group:hover {
+#new-window:hover {
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
 }
@@ -202,11 +176,6 @@ window#waybar>* {
     border-radius: 4px;
 }
 
-/* Центральный модуль */
-/* .modules-center {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 4px 0px 4px;
-} */
 
 #window {
     padding: 0px 10px 0px 10px;
@@ -215,62 +184,6 @@ window#waybar>* {
 }
 
 window#waybar.empty #new-window {
-    border: none;
-}
-
-/* Правый модуль */
-/* .modules-right {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-} */
-
-#tray {
-    border-radius: 0px;
-    margin-right: 5px;
-    padding: 2px 4px 2px 4px;
-}
-
-/* Доделать меню */
-#tray menu {
-    color: @fColor_tooltip;
-    background-color: @bColor;
-    border: 1px solid @borderColor;
-    opacity: 0.85;
-    padding: 0px 2px 0px 2px;
-}
-
-#tray menuitem {
-    margin: 2px 0px 2px 0px;
-    border: 1px solid transparent;
-    /* добавляем эту строку */
-}
-
-#tray menuitem:hover {
-    border-radius: 4px;
-    background-color: @bColor_hover;
-    border-bottom: 1px solid @borderColor;
-    transition: all 0.3s ease-in-out;
-}
-
-#tray_group {
-    font-size: 22px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 7px 0px 7px;
-    color: #e70505;
-    border-radius: 20px/10px;
-    border-right: 1px solid @borderColor;
-    border-left: 1px solid @borderColor;
-}
-
-#custom-tray_icon {
-    font-size: 22px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 1px 0px 1px;
-    color: #e70505;
-    font-family: "Font Awesome";
-}
-
-tray#waybar.empty #group-tray_group {
     border: none;
 }
 
@@ -284,6 +197,9 @@ tray#waybar.empty #group-tray_group {
     border-radius: 20px/10px;
     border-right: 1px solid @borderColor;
     border-left: 1px solid @borderColor;
+}
+#network {
+    min-width: 200px;
 }
 
 #network.disabled,

@@ -9,15 +9,9 @@
         ],
         "spacing": 5,
         "modules-left": [
-            "custom/launcher",
             "group/new-workspace",
             "group/hardware"
         ],
-        "custom/launcher": {
-            "format": " ",
-            "tooltip": false,
-            "on-click": "~/.config/wofi/wofi-toggle.sh"
-        },
         "hyprland/workspaces": {
             "format": "{icon}",
             "format-icons": {
@@ -125,13 +119,11 @@
             ]
         },
         "modules-right": [
-            "group/tray_group",
             "hyprland/language",
             "pulseaudio#microphone",
             "pulseaudio",
             "network",
-            "clock",
-            "custom/power"
+            "clock"
         ],
         "pulseaudio#microphone": {
             "format": "{format_source}",
@@ -140,24 +132,6 @@
             "format-source-muted": " 󰍭 ",
             "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
             "on-click-right": "pavucontrol"
-        },
-        "tray": {
-            "spacing": 10
-        },
-        "custom/tray_icon": {
-            "format": "   ",
-            "tooltip": false
-        },
-        "group/tray_group": {
-            "orientation": "inherit",
-            "drawer": {
-                "transition-duration": 300,
-                "transition-left-to-right": false
-            },
-            "modules": [
-                "custom/tray_icon",
-                "tray"
-            ]
         },
         "hyprland/language": {
             "font-family": "JetBrainsMono Nerd Font, Noto Color Emoji",
@@ -189,13 +163,14 @@
             "tooltip-format": "{desc}"
         },
         "network": {
+            "interval": 2,
             "format": " 󰤭 ",
-            "format-wifi": "  ",
-            "format-ethernet": " 󰈀 ",
+            "format-wifi": " {bandwidthDownBytes}   {bandwidthUpBytes} ",
+            "format-ethernet": "{bandwidthDownBytes} {bandwidthUpBytes} ",
             "format-disconnected": "  ",
             "tooltip": true,
             "tooltip-format": "{ifname}\n{ipaddr}",
-            "tooltip-format-wifi": "{essid} {ifname}\n{ipaddr}\nstrength: {signalStrength}%",
+            "tooltip-format-wifi": "{essid} {ifname}\n{ipaddr}\nstrength: {signalStrength}%\n {bandwidthDownBytes}   {bandwidthUpBytes}",
             "on-click": "~/.config/waybar/scripts/nmtui.sh"
         },
         "clock": {
@@ -219,18 +194,6 @@
                 "on-click-backward": "tz_down",
                 "on-scroll-up": "shift_up",
                 "on-scroll-down": "shift_down"
-            }
-        },
-        "custom/power": {
-            "format": " 󰐥 ",
-            "tooltip": false,
-            "menu": "on-click",
-            "menu-file": "~/.config/waybar/scripts/power_menu.xml",
-            "menu-actions": {
-                "lock": "hyprlock",
-                "hypr_exit": "hyprshutdown",
-                "shutdown": "shutdown now",
-                "reboot": "reboot"
             }
         }
     }
