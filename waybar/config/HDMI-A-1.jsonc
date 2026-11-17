@@ -116,7 +116,7 @@
         },
         "modules-right": [
             "hyprland/language",
-           "group/wc",
+            "group/wc",
             "pulseaudio#microphone",
             "pulseaudio",
             "network",
