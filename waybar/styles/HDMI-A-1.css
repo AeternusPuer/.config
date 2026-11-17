@@ -104,7 +104,7 @@ window#waybar>* {
     border-radius: 20px/10px;
     border-right: 1px solid @borderColor;
     border-left: 1px solid @borderColor;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 2px 0px 2px;
     padding: 0px 5px 0px 5px;
 }
 
@@ -192,7 +192,7 @@ window#waybar.empty #new-window {
 #network {
     font-family: "Font Awesome";
     color: @fColor_active;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 2px 0px 2px;
     padding: 0px 8px 0px 8px;
     border-radius: 20px/10px;
     border-right: 1px solid @borderColor;
@@ -214,7 +214,7 @@ window#waybar.empty #new-window {
 
 #clock {
     font-family: "Font Awesome";
-    margin: 0px 0px 0px 0px;
+    margin: 0px 2px 0px 2px;
     padding: 0px 8px 0px 8px;
     border-radius: 20px/10px;
     border-right: 1px solid @borderColor;
@@ -274,7 +274,7 @@ menu separator {
 #wc {
     font-family: "Font Awesome";
     color: @fColor_active;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 2px 0px 2px;
     padding: 0px 12px 0px 4px;
     border-radius: 20px/10px;
     border-right: 1px solid @borderColor;
@@ -283,4 +283,9 @@ menu separator {
 #wc:hover {
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
+}
+#wc.empty {
+    margin: 0px;
+    padding: 0px;
+    border: none;
 }

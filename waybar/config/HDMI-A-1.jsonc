@@ -8,7 +8,7 @@
         "output": [
             "HDMI-A-1"
         ],
-        "spacing": 5,
+        // "spacing": 5, //надо решить проблемму 
         "modules-left": [
             "group/new-workspace",
             "group/hardware"
@@ -28,7 +28,6 @@
             },
             "tooltip": false
         },
-        // Необходимо изменить, так, что бы создавал только на том мониторе на котором нажата
         "custom/new-workspace": {
             "format": "",
             "on-click": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"+1\" })'",
@@ -194,12 +193,14 @@
                 "on-scroll-down": "shift_down"
             }
         },
+        //Заплатка не рабочего выделения модуля
         "group/wc": {
             "orientation": "inherit",
             "modules": [
                 "custom/webcam"
             ]
         },
+        //статус веб камеры
         "custom/webcam": {
             "exec": "~/.config/waybar/scripts/webcam.sh",
             "return-type": "json",
@@ -207,10 +208,11 @@
             "format": "{icon}",
             "format-icons": {
                 "active": "  ",
-                "inactive": "  "
+                // "inactive": "  "
             },
             "tooltip": true,
-            // "on-click": ":"
+            "on-click": "",
+            "hide-empty-text": true
         }
     }
 ]
