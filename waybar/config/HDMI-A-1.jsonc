@@ -1,5 +1,6 @@
 [
     {
+        "height": 45,
         "layer": "top",
         "position": "top",
         "margin": "5 5 0 5",
@@ -72,10 +73,6 @@
         },
         "group/hardware": {
             "orientation": "inherit",
-            // "drawer": {
-            //     "transition-duration": 500,
-            //     "transition-left-to-right": true
-            // },
             "modules": [
                 "custom/gpu-temp",
                 "temperature#cpu",
@@ -120,6 +117,7 @@
         },
         "modules-right": [
             "hyprland/language",
+           "group/wc",
             "pulseaudio#microphone",
             "pulseaudio",
             "network",
@@ -195,6 +193,24 @@
                 "on-scroll-up": "shift_up",
                 "on-scroll-down": "shift_down"
             }
+        },
+        "group/wc": {
+            "orientation": "inherit",
+            "modules": [
+                "custom/webcam"
+            ]
+        },
+        "custom/webcam": {
+            "exec": "~/.config/waybar/scripts/webcam.sh",
+            "return-type": "json",
+            "interval": 2,
+            "format": "{icon}",
+            "format-icons": {
+                "active": "  ",
+                "inactive": "  "
+            },
+            "tooltip": true,
+            // "on-click": ":"
         }
     }
 ]

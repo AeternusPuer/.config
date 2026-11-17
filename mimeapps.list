@@ -15,3 +15,4 @@ application/x-zerosize=com.microsoft.VSCode.desktop
 text/plain=code.desktop
 inode/directory=thunar.desktop
 x-scheme-handler/discord-1296840202995896363=discord-1296840202995896363.desktop
+x-scheme-handler/discord=vesktop.desktop

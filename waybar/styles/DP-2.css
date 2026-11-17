@@ -37,11 +37,6 @@ window#waybar>* {
     border: 1px solid @borderColor;
     padding: 0px 4px 0px 4px;
 }
-/* 
-.modules-left {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-} */
 
 #custom-launcher {
     font-size: 22px;
@@ -54,15 +49,6 @@ window#waybar>* {
     border-left: 1px solid @borderColor;
 
 }
-
-#custom-launcher:hover,
-#custom-tray_icon:hover,
-#custom-power:hover {
-    color: @fColor_hover;
-    border-radius: 4px;
-    transition: all 0.3s ease-in-out;
-}
-
 #workspaces {
     padding: 0px 2px 0px 2px;
     margin: 0px 0px 0px 0px;

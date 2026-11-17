@@ -12,7 +12,7 @@
             "group/hardware"
         ],
         "custom/launcher": {
-            "format": " ",
+            "format": "  ",
             "tooltip": false,
             "on-click": "~/.config/wofi/wofi-toggle.sh"
         },
@@ -133,7 +133,7 @@
             "spacing": 10
         },
         "custom/tray_icon": {
-            "format": "   ",
+            "format": "  ",
             "tooltip": false
         },
         "group/tray_group": {

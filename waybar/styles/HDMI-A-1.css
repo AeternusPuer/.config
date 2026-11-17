@@ -198,8 +198,9 @@ window#waybar.empty #new-window {
     border-right: 1px solid @borderColor;
     border-left: 1px solid @borderColor;
 }
+
 #network {
-    min-width: 200px;
+    min-width: 210px;
 }
 
 #network.disabled,
@@ -219,18 +220,6 @@ window#waybar.empty #new-window {
     border-right: 1px solid @borderColor;
     border-left: 1px solid @borderColor;
     color: @fColor_clock;
-}
-
-#custom-power {
-    font-size: 22px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 3px 0px 3px;
-    color: #e70505;
-    font-family: "Font Awesome";
-    border-radius: 20px/10px;
-    border-right: 1px solid @borderColor;
-    border-left: 1px solid @borderColor;
-
 }
 
 /* ToolTip всплывающие окна */
@@ -280,4 +269,18 @@ menu separator {
     background-color: @borderColor;
     margin: 4px 0;
     min-height: 1px;
+}
+/*заплатка*/
+#wc {
+    font-family: "Font Awesome";
+    color: @fColor_active;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 12px 0px 4px;
+    border-radius: 20px/10px;
+    border-right: 1px solid @borderColor;
+    border-left: 1px solid @borderColor;
+}
+#wc:hover {
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
 }
