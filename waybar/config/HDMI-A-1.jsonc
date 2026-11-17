@@ -91,7 +91,7 @@
             "tooltip": false
         },
         "wlr/taskbar": {
-            "active-first": true,
+            "active-first": false,
             "all-outputs": true,
             "format": "{icon}",
             "icon-size": 18, // Установите удобный размер иконок
