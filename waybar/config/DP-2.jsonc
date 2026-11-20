@@ -102,7 +102,7 @@
             "all-outputs": true,
             "format": "{icon}",
             "icon-size": 18, // Установите удобный размер иконок
-            "tooltip": false, // Показывать всплывающие подсказки
+            "tooltip": true, // Показывать всплывающие подсказки
             "ignore-list": [
                 "wofi"
             ],

@@ -20,7 +20,7 @@ end)
 
 -- Приложения для исключения
 local exceptions = {
-    classes = { steam = true, kitty = false },
+    classes = { steam = true, kitty = false, vlc = true },
     title_patterns = { "^Save", "Dialog" },
     content_types = { game = true },
 }
@@ -68,7 +68,6 @@ hl.window_rule({
       
     },
     size               = "1280 720",     
-    monitor      = "current",
     workspace    = "4",
     float        = true,
     center       = true,
@@ -83,8 +82,6 @@ hl.window_rule({
         class = pavucontrol,
     },
     size         = "1280 720",
-    monitor      = "current",
-    workspace    = "current",
     float        = true,
     center       = true,
     animation    = "popin",
@@ -118,7 +115,6 @@ hl.window_rule({
 })    
 hl.window_rule({
     name         = "razergenie",
-    workspace    = "current",
     match        = {
         class = "xyz.z3ntu.razergenie",
     },
@@ -154,7 +150,16 @@ hl.window_rule({
     monitor      = "HDMI-A-1",
 })
 
-
-
+-- Vesctop
+hl.window_rule({
+    name         = "vesktop",
+    match        = {
+        initial_class = "vesktop",      
+    },
+    workspace    = "6",
+    float        = false,
+    animation    = "popin",
+    stay_focused = false
+})
 
 

@@ -3,6 +3,8 @@
         "height": 45,
         "layer": "top",
         "position": "top",
+        // "mode": "overlay",
+        "exclusive": true,
         "margin": "5 5 0 5",
         "locale": "ru_RU.UTF-8",
         "output": [
@@ -95,7 +97,7 @@
             "all-outputs": true,
             "format": "{icon}",
             "icon-size": 18, // Установите удобный размер иконок
-            "tooltip": false, // Показывать всплывающие подсказки
+            "tooltip": true, // Показывать всплывающие подсказки
             "ignore-list": [
                 "wofi"
             ],
