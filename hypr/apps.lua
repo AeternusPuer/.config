@@ -10,7 +10,7 @@ pavucontrol = "org.pulseaudio.pavucontrol"
 -------------------
 ---- AUTOSTART ----
 -------------------
-hl.on("hyprland.start", function()
+hl.on("hyprland.start", function()    
     hl.exec_cmd("~/.azotebg-hyprland")
     hl.exec_cmd("waybar -c ~/.config/waybar/config/DP-2.jsonc -s ~/.config/waybar/styles/DP-2.css")
     hl.exec_cmd("waybar -c ~/.config/waybar/config/HDMI-A-1.jsonc -s ~/.config/waybar/styles/HDMI-A-1.css")
