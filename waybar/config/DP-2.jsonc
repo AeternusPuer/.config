@@ -217,8 +217,8 @@
             "menu-actions": {
                 "lock": "hyprlock",
                 "hypr_exit": "hyprshutdown",
-                "shutdown": "shutdown now",
-                "reboot": "reboot"
+                "shutdown": "hyprshutdown -t 'Выключение...' -p 'systemctl poweroff'",
+                "reboot": "hyprshutdown -t 'Перезагрузка...' -p 'systemctl reboot'"
             }
         }
     }

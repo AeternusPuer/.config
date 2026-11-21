@@ -20,7 +20,7 @@ end)
 
 -- Приложения для исключения
 local exceptions = {
-    classes = { steam = true, kitty = false, vlc = true },
+    classes = { steam = true, kitty = false, vlc = true, obs = true },
     title_patterns = { "^Save", "Dialog" },
     content_types = { game = true },
 }
@@ -161,5 +161,41 @@ hl.window_rule({
     animation    = "popin",
     stay_focused = false
 })
-
+-- OBS
+hl.window_rule({
+    name         = "obs",
+    match        = {
+        initial_class = "com.obsproject.Studio",      
+    },
+    workspace    = "2",
+    float        = false,
+    animation    = "popin",
+    stay_focused = false
+})
+hl.window_rule({
+    name         = "obs-настройки",
+    match        = {
+        initial_class = "com.obsproject.Studio",      
+        initial_title = "Настройки|Менеджер плагинов|Мастер автоматической настройки|Таймер записи и трансляции|Свойства «.*»|Файл изображения"
+    },
+    workspace    = "2",
+    size = "1040 620",
+    float        = true,
+    center       = true,
+    animation    = "popin",
+    stay_focused = false
+})
+hl.window_rule({
+    name         = "obs-изображение",
+    match        = {
+        initial_class = "obs",      
+        initial_title = "Файл изображения"
+    },
+    workspace    = "2",
+    size = "1040 620",
+    float        = true,
+    center       = true,
+    animation    = "popin",
+    stay_focused = false
+})
 
