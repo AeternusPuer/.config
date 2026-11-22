@@ -184,6 +184,7 @@ window#waybar>* {
 
 window#waybar.empty #new-window {
     border: none;
+    /* border-radius: 30%; */
 }
 
 #language,
@@ -291,3 +292,4 @@ menu separator {
     padding: 0px;
     border: none;
 }
+

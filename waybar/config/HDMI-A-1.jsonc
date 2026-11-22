@@ -82,7 +82,7 @@
             ]
         },
         "modules-center": [
-            "group/new-window"
+            "group/new-window"    
         ],
         "hyprland/window": {
             "icon": false,
@@ -94,10 +94,11 @@
         },
         "wlr/taskbar": {
             "active-first": false,
-            "all-outputs": true,
+            "all-outputs": false, // ← Измените true на false
             "format": "{icon}",
-            "icon-size": 18, // Установите удобный размер иконок
-            "tooltip": true, // Показывать всплывающие подсказки
+            "icon-size": 18,
+            "tooltip": true,
+            "sort-by-app-id": true,
             "ignore-list": [
                 "wofi"
             ],
@@ -209,8 +210,7 @@
             "interval": 2,
             "format": "{icon}",
             "format-icons": {
-                "active": "  ",
-                // "inactive": "  "
+                "active": "  "
             },
             "tooltip": true,
             "on-click": "",
