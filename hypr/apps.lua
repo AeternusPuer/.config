@@ -21,7 +21,10 @@ end)
 
 -- Приложения для исключения
 local exceptions = {
-    classes = { steam = true, kitty = false, vlc = true, obs = true},
+    classes = { steam = true,
+                vlc = true, 
+                obs = true,
+                ["org.kde.kdenlive"] = true,},
     title_patterns = { "^Save", "Dialog" },
     content_types = { game = true },
 }
@@ -196,6 +199,21 @@ hl.window_rule({
         initial_title = "Файл изображения"
     },
     workspace    = "2",
+    size = "1040 620",
+    float        = true,
+    center       = true,
+    animation    = "popin",
+    stay_focused = false
+})
+--Kdenlive
+hl.window_rule({
+    name         = "Kdenlive",
+    match        = {
+        class = "org.kde.kdenlive",
+	    title = "Kdenlive",
+	    initial_class = "org.kde.kdenlive",
+	    initial_title = "Kdenlive"
+    },
     size = "1040 620",
     float        = true,
     center       = true,
