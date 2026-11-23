@@ -21,7 +21,7 @@ end)
 
 -- Приложения для исключения
 local exceptions = {
-    classes = { steam = true, kitty = false, vlc = true, obs = true },
+    classes = { steam = true, kitty = false, vlc = true, obs = true},
     title_patterns = { "^Save", "Dialog" },
     content_types = { game = true },
 }
@@ -45,7 +45,10 @@ hl.on("window.open", function(win)
     if not win.workspace or is_excluded(win) then
         return
     end
-    hl.dispatch(hl.dsp.cursor.move_to_corner({ corner = 0, window = win }))
+    -- Вычисляем центр окна
+    local center_x = win.at.x + win.size.x / 2
+    local center_y = win.at.y + win.size.y / 2
+    hl.dispatch(hl.dsp.cursor.move({ x = center_x, y = center_y }))
 end)
 
 -- Kitty

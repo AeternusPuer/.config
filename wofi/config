@@ -15,4 +15,5 @@ halign=fill
 content_halign=fill
 hide_scroll = true
 close_on_focus_loss=true
+on_demand_focus=true
 }

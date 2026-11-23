@@ -31,7 +31,7 @@
         },
         "custom/new-workspace": {
             "format": "",
-            "on-click": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"r+1\" })'",
+            "on-click": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"r+1\" })'",// Нужно поменять
             "tooltip": false
         },
         "group/new-workspace": {
@@ -97,7 +97,6 @@
             "format": "{icon}",
             "icon-size": 18,
             "tooltip": true,
-            "sort-by-app-id": true,
             "ignore-list": [
                 "wofi"
             ],

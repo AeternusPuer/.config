@@ -98,7 +98,7 @@
         },
         "wlr/taskbar": {
             "active-first": false,
-            "all-outputs": true,
+            "all-outputs": false, //приложения запущенные на всех мониторах 
             "format": "{icon}",
             "icon-size": 18, // Установите удобный размер иконок
             "tooltip": true, // Показывать всплывающие подсказки
