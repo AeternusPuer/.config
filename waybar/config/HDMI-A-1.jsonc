@@ -23,16 +23,15 @@
             "on-click": "activate",
             "cursor": true,
             "show-special": false,
-            "all-outputs": true,
+            "all-outputs": false,
+            "tooltip": false,
             "persistent-workspaces": {
-                "1": [],
                 "2": []
-            },
-            "tooltip": false
+            }
         },
         "custom/new-workspace": {
             "format": "",
-            "on-click": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"+1\" })'",
+            "on-click": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"r+1\" })'",
             "tooltip": false
         },
         "group/new-workspace": {
@@ -82,7 +81,7 @@
             ]
         },
         "modules-center": [
-            "group/new-window"    
+            "group/new-window"
         ],
         "hyprland/window": {
             "icon": false,
