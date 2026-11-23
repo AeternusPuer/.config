@@ -39,7 +39,7 @@ window#waybar>* {
 }
 
 #custom-launcher {
-    font-size: 22px;
+    font-size: 28px;
     margin: 0px 0px 0px 0px;
     padding: 0px 7px 0px 7px;
     color: #e70505;
@@ -49,6 +49,8 @@ window#waybar>* {
     border-left: 1px solid @borderColor;
 
 }
+
+
 #workspaces {
     padding: 0px 2px 0px 2px;
     margin: 0px 0px 0px 0px;
@@ -108,7 +110,6 @@ window#waybar>* {
     font-size: 18px;
     font-family: "Font Awesome";
 }
-
 #new-workspace,
 #hardware,
 #new-window {
@@ -302,6 +303,7 @@ tray#waybar.empty #group-tray_group {
     border-left: 1px solid @borderColor;
 
 }
+
 
 /* ToolTip всплывающие окна */
 tooltip {

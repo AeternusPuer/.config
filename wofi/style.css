@@ -30,7 +30,7 @@ window {
   border-bottom: 1px solid @borderColor;
   font-size: 18px;
   font-weight: bold;
-f}
+}
 
 #input:focus {
     border-radius: 0px;

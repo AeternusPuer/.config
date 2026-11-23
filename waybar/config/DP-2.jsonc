@@ -6,13 +6,14 @@
         "locale": "ru_RU.UTF-8",
         "output": "DP-2",
         "spacing": 5,
+        "height": 36,
         "modules-left": [
             "custom/launcher",
             "group/new-workspace",
             "group/hardware"
         ],
         "custom/launcher": {
-            "format": "  ",
+            "format": " 󰈸 ",
             "tooltip": false,
             "on-click": "~/.config/wofi/wofi-toggle.sh"
         },
