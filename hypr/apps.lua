@@ -18,7 +18,10 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("/usr/lib/hyprpolkitagent/hyprpolkitagent")
     hl.exec_cmd("/usr/lib/xdg-desktop-portal")
 end)
-
+----POWEROFF---
+hl.on("hyprland.shutdown", function()
+    os.execute("~/.config/hypr/scripts/unmount-ntfs.sh")
+end)
 -- Приложения для исключения
 local exceptions = {
     classes = { steam = true,

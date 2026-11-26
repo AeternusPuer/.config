@@ -216,9 +216,9 @@
             "menu-file": "~/.config/waybar/scripts/power_menu.xml",
             "menu-actions": {
                 "lock": "hyprlock",
-                "hypr_exit": "hyprshutdown -p '~/.config/hypr/scripts/unmount-ntfs.sh'",
-                "shutdown": "hyprshutdown -p '~/.config/hypr/scripts/unmount-ntfs.sh && systemctl poweroff'",
-                "reboot": "hyprshutdown -p '~/.config/hypr/scripts/unmount-ntfs.sh && systemctl reboot'"
+                "hypr_exit": "hyprshutdown",
+                "shutdown": "hyprshutdown -p 'systemctl poweroff'",
+                "reboot": "hyprshutdown -p 'systemctl reboot'"
             }
         }
     }

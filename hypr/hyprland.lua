@@ -143,7 +143,7 @@ local mainMod = "SUPER"
 -- Основные действия
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + Q",      hl.dsp.window.close())
-hl.bind(mainMod .. " + M",      hl.dsp.exec_cmd("hyprshutdown -p '~/.config/hypr/scripts/unmount-ntfs.sh'"))
+hl.bind(mainMod .. " + M",      hl.dsp.exec_cmd("hyprshutdown"))
 hl.bind(mainMod .. " + E",      hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V",      hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R",      hl.dsp.exec_cmd(menu))
