@@ -1,6 +1,5 @@
 #!/bin/bash
-# ~/.config/hypr/scripts/unmount-ntfs.sh
-exec >>"$HOME/.cache/unmount-ntfs.log" 2>&1
+exec >>"$HOME/.config/hypr/log/unmount-ntfs.log" 2>&1
 echo "=== $(date) ==="
 findmnt -t ntfs,ntfs3,fuseblk -o TARGET,SOURCE -n | while read -r mountpoint source; do
     if [[ "$mountpoint" == /run/media/* ]]; then

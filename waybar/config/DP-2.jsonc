@@ -218,7 +218,7 @@
                 "lock": "hyprlock",
                 "hypr_exit": "hyprshutdown -p '~/.config/hypr/scripts/unmount-ntfs.sh'",
                 "shutdown": "hyprshutdown -p '~/.config/hypr/scripts/unmount-ntfs.sh && systemctl poweroff'",
-                "reboot": "hyprshutdown -t 'Перезагрузка...' -p '~/.config/hypr/scripts/unmount-ntfs.sh && systemctl reboot'"
+                "reboot": "hyprshutdown -p '~/.config/hypr/scripts/unmount-ntfs.sh && systemctl reboot'"
             }
         }
     }

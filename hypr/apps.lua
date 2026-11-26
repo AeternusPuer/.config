@@ -119,7 +119,21 @@ hl.window_rule({
     float        = true,
     center       = true,
     
-})    
+})   
+hl.window_rule({
+    name         = "Thunar_Действия над файлами",
+    match        = {
+        class = "Thunar|thunar",
+        title = "Действия над файлами",
+    },
+    animation    = "popin",
+    stay_focused = false,
+    size         = "600 140",
+    float        = true,
+    -- center убран
+    move = "(monitor_w-610) (monitor_h-150)",
+})
+-- razer
 hl.window_rule({
     name         = "razergenie",
     match        = {

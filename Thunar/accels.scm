@@ -27,6 +27,7 @@
 ; (gtk_accel_path "<Actions>/ThunarStandardView/forward" "<Alt>Right")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/restore" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/open-location-alt" "<Alt>d")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/14a348ad2e35197b2b1ce1354d108e58" "")
 ; (gtk_accel_path "<Actions>/ThunarBookmarks/e19f758d836ddd6aa22fec71021fba2c" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/zoom-out-alt" "<Primary>KP_Subtract")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/select-by-pattern" "<Primary>s")
