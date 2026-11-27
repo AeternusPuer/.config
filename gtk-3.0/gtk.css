@@ -137,7 +137,7 @@ dialog selection {
     border-radius: 4px;
 }
 treeview.view header button {
-         background-color: rgba(22, 22, 23, 0.2);
+    background-color: rgba(22, 22, 23, 0.2);
     color: #f5f8f8;
     border-radius: 0px;
 }
