@@ -3011,6 +3011,38 @@ avcodec-hw=none
 # Password used for stream authentication (string)
 #rist-password=
 
+[live555] # RTP/RTSP/SDP demuxer (using Live555)
+
+# Use RTP over RTSP (TCP) (boolean)
+#rtsp-tcp=0
+
+# Client port (integer)
+#rtp-client-port=-1
+
+# Force multicast RTP via RTSP (boolean)
+#rtsp-mcast=0
+
+# Tunnel RTSP and RTP over HTTP (boolean)
+#rtsp-http=0
+
+# HTTP tunnel port (integer)
+#rtsp-http-port=80
+
+# Kasenna RTSP dialect (boolean)
+#rtsp-kasenna=0
+
+# WMServer RTSP dialect (boolean)
+#rtsp-wmserver=0
+
+# Username (string)
+#rtsp-user=
+
+# Password (string)
+#rtsp-pwd=
+
+# RTSP frame buffer size (integer)
+#rtsp-frame-buffer-size=250000
+
 [libbluray] # Blu-ray Disc support (libbluray)
 
 # Blu-ray menus (boolean)

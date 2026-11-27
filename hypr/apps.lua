@@ -31,7 +31,6 @@ local exceptions = {
     title_patterns = { "^Save", "Dialog" },
     content_types = { game = true },
 }
-
 local function is_excluded(win)
     if exceptions.classes[win.class] then
         return true

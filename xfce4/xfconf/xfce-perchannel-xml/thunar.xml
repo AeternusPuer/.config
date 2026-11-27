@@ -13,7 +13,7 @@
   <property name="misc-open-new-window-as-tab" type="bool" value="true"/>
   <property name="misc-confirm-close-multiple-tabs" type="bool" value="false"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_25_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,149,50,91,137,50,50,456,50,50,84,50,58"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,149,50,91,137,50,50,611,50,50,84,50,223"/>
   <property name="misc-recursive-permissions" type="string" value="THUNAR_RECURSIVE_PERMISSIONS_ALWAYS"/>
   <property name="last-image-preview-visible" type="bool" value="true"/>
   <property name="shortcuts-icon-emblems" type="bool" value="true"/>
@@ -21,10 +21,10 @@
   <property name="misc-symbolic-icons-in-sidepane" type="bool" value="false"/>
   <property name="misc-directory-specific-settings" type="bool" value="false"/>
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_NAME"/>
-  <property name="last-sort-order" type="string" value="GTK_SORT_DESCENDING"/>
+  <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
   <property name="misc-thumbnail-draw-frames" type="bool" value="false"/>
   <property name="misc-show-delete-action" type="bool" value="false"/>
   <property name="misc-highlighting-enabled" type="bool" value="true"/>
-  <property name="last-splitview-separator-position" type="int" value="847"/>
+  <property name="last-splitview-separator-position" type="int" value="1098"/>
   <property name="last-location-bar" type="string" value="ThunarLocationEntry"/>
 </channel>
