@@ -185,6 +185,17 @@ hl.window_rule({
     animation    = "popin",
     stay_focused = false
 })
+-- Discord
+hl.window_rule({
+    name         = "discord",
+    match        = {
+        initial_class = "discord",      
+    },
+    workspace    = "6",
+    float        = false,
+    animation    = "popin",
+    stay_focused = false
+})
 -- OBS
 hl.window_rule({
     name         = "obs",

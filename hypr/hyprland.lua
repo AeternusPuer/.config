@@ -133,8 +133,9 @@ hl.gesture({
     action    = "workspace"
 })
 hl.device({
-    name        = "epic-mouse-v1",
-    sensitivity = -0.5,
+    name        = "razer-razer-cobra-pro-1",
+    sensitivity = -0.7,
+    accel_profile = flat
 })
 ---------------------
 ---- KEYBINDINGS ----
